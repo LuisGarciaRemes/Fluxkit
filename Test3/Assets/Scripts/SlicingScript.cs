@@ -4,22 +4,27 @@ using UnityEngine;
 
 public class SlicingScript : MonoBehaviour {
 
-    public SphereCollider[] points;
+    public GameObject[] points;
     private bool allPointsCut;
 
 	// Use this for initialization
-	void Start () {      
-	}
+	void Start () {
+        allPointsCut = false;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        allPointsCut = true;
         for (int i = 0; i < points.Length; i++)
         {
-            if(points[i].enabled)
+            if(points[i].activeSelf)
             {
                 allPointsCut = false;
+                break;
+            }
+            else
+            {
+                allPointsCut = true;
             }
         }
 
