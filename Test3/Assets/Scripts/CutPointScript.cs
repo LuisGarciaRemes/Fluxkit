@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CutPointScript : MonoBehaviour {
 
-    public GameObject point;
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Knife"))
