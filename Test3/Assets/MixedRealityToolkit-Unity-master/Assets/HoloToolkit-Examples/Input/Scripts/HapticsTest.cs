@@ -14,6 +14,7 @@ namespace HoloToolkit.Unity.Tests
             InteractionInputSource inputSource = eventData.InputSource as InteractionInputSource;
             if (inputSource != null)
             {
+                inputSource.StartHaptics(eventData.SourceId, 1.0f, 1.0f);
                 switch (eventData.PressType)
                 {
                     case InteractionSourcePressInfo.Grasp:

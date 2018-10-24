@@ -420,13 +420,14 @@ namespace HoloToolkit.Unity.InputModule
 
         public void StartHaptics(uint sourceId, float intensity)
         {
-#if UNITY_WSA && UNITY_2017_2_OR_NEWER
+            //#if UNITY_WSA && UNITY_2017_2_OR_NEWER
+            Debug.Log("Pressed");
             SourceData sourceData;
             if (sourceIdToData.TryGetValue(sourceId, out sourceData))
             {
                 sourceData.Source.StartHaptics(intensity);
             }
-#endif
+//#endif
         }
 
         public void StartHaptics(uint sourceId, float intensity, float durationInSeconds)
