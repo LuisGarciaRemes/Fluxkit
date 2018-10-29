@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HoloToolkit.Unity.InputModule.Examples.Grabbables;
 
 public class SlicingScript : MonoBehaviour {
 
@@ -30,7 +31,7 @@ public class SlicingScript : MonoBehaviour {
 
         if(allPointsCut)
         {
-            Destroy(gameObject);
+            gameObject.GetComponent<GrabbableChild>().enabled = true;
         }
     }
 }
