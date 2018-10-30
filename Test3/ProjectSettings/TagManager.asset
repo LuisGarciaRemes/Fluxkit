@@ -8,6 +8,8 @@ TagManager:
   - Stapler
   - Icecube
   - RemovableSkin
+  - Cupcake
+  - Wound
   layers:
   - Default
   - TransparentFX
