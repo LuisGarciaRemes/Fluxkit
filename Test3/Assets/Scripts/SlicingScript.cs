@@ -6,11 +6,13 @@ using HoloToolkit.Unity.InputModule.Examples.Grabbables;
 public class SlicingScript : MonoBehaviour {
 
     public GameObject[] points;
-    private bool allPointsCut;   
+    private bool allPointsCut;
+    internal bool isStapled;
 
 	// Use this for initialization
 	void Start () {
         allPointsCut = false;
+        isStapled = true;
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class SlicingScript : MonoBehaviour {
             else
             {
                 allPointsCut = true;
+                isStapled = false;
             }
         }
 
