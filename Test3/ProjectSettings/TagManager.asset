@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Knife
   - Stapler
+  - Icecube
+  - RemovableSkin
   layers:
   - Default
   - TransparentFX

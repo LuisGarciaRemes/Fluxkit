@@ -6,7 +6,7 @@ using HoloToolkit.Unity.InputModule.Examples.Grabbables;
 public class SlicingScript : MonoBehaviour {
 
     public GameObject[] points;
-    private bool allPointsCut;
+    private bool allPointsCut;   
 
 	// Use this for initialization
 	void Start () {
