@@ -6,7 +6,7 @@ public class SawingManager : MonoBehaviour {
     public static SawingManager Instance = null;
     public Transform contact_position = null;
     public GameObject Foot = null;
-    public Vector3 NormalVector;
+    public Vector3 NormalVector = new Vector3(1,0,0);
     public Vector3 Privious_contact_Position;
     public bool registered = false;
     public float max_tolerence;

@@ -6,7 +6,7 @@ public class Tramble : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Saw") {
-            SawingManager.Instance.Register(this.GetComponent<Transform>().parent.parent, this.gameObject);
+            SawingManager.Instance.Register(other.gameObject.GetComponent<Transform>(), this.gameObject);
             Debug.Log("Contact");
         }
     }
