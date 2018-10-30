@@ -9,8 +9,15 @@ namespace HoloToolkit.Unity.Tests
     [RequireComponent(typeof(SetGlobalListener))]
     public class HapticsTest : MonoBehaviour, IInputHandler
     {
+        public bool IsActive = false;
+        void Awake() {
+            IsActive = false;
+        }
         void IInputHandler.OnInputDown(InputEventData eventData)
         {
+            if (!IsActive) {
+                return;
+            }
             InteractionInputSource inputSource = eventData.InputSource as InteractionInputSource;
             if (inputSource != null)
             {
@@ -29,6 +36,9 @@ namespace HoloToolkit.Unity.Tests
 
         void IInputHandler.OnInputUp(InputEventData eventData)
         {
+            if (!IsActive) {
+                return;
+            }
             InteractionInputSource inputSource = eventData.InputSource as InteractionInputSource;
             if (inputSource != null)
             {
