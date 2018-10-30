@@ -7,6 +7,7 @@ public class Tramble : MonoBehaviour {
     {
         if (other.tag == "Saw") {
             SawingManager.Instance.Register(this.transform, this.gameObject);
+            Debug.Log("Contact");
         }
     }
     private void OnTriggerStay(Collider other)

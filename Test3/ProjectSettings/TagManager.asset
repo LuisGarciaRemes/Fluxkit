@@ -10,6 +10,7 @@ TagManager:
   - RemovableSkin
   - Cupcake
   - Wound
+  - Saw
   layers:
   - Default
   - TransparentFX
