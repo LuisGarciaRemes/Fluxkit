@@ -410,13 +410,13 @@ Prefab:
         type: 2}
       propertyPath: AlternateLeftController
       value: 
-      objectReference: {fileID: 1745800145629774, guid: 217cbcc3dd09de2418d2df6ccef73ce4,
+      objectReference: {fileID: 1431408446161180, guid: f03fdbc4624ff9744b197b051d0461d8,
         type: 2}
     - target: {fileID: 114710303647202208, guid: d29bc40b7f3df26479d6a0aac211c355,
         type: 2}
       propertyPath: AlternateRightController
       value: 
-      objectReference: {fileID: 1745800145629774, guid: 4d7b6568587c37145b128bf3a32179f2,
+      objectReference: {fileID: 1431408446161180, guid: f5cd5b5f025f72647aa2879bb4b746aa,
         type: 2}
     - target: {fileID: 114710303647202208, guid: d29bc40b7f3df26479d6a0aac211c355,
         type: 2}
@@ -682,11 +682,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4674022279488630, guid: 35854a197a644a241a5a211c60b3daaf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4674022279488630, guid: 35854a197a644a241a5a211c60b3daaf, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4674022279488630, guid: 35854a197a644a241a5a211c60b3daaf, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1150,6 +1150,27 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 212460132617010664, guid: 550f36933b128ff4782247cd82c0cdc7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300004, guid: fc040866a61a50a45a776b2223a4a18a,
+        type: 3}
+    - target: {fileID: 212460132617010664, guid: 550f36933b128ff4782247cd82c0cdc7,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212460132617010664, guid: 550f36933b128ff4782247cd82c0cdc7,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212460132617010664, guid: 550f36933b128ff4782247cd82c0cdc7,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114528759641020176, guid: 550f36933b128ff4782247cd82c0cdc7, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 550f36933b128ff4782247cd82c0cdc7, type: 2}
@@ -1383,6 +1404,12 @@ Prefab:
       propertyPath: m_TagString
       value: Stapler
       objectReference: {fileID: 0}
+    - target: {fileID: 212538006877095042, guid: 4967d65fb889ff640bd10244bc80f661,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300010, guid: fc040866a61a50a45a776b2223a4a18a,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 114324852575698474, guid: 4967d65fb889ff640bd10244bc80f661, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 4967d65fb889ff640bd10244bc80f661, type: 2}
@@ -1778,7 +1805,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1472727348}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 30, z: 0.55}
+  m_LocalPosition: {x: 0, y: 30, z: 1.5}
   m_LocalScale: {x: 2.5, y: 2.5, z: 0.05}
   m_Children: []
   m_Father: {fileID: 2133959676}
