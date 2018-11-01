@@ -11,7 +11,6 @@ public class SawingManager : MonoBehaviour {
     public Vector3 Privious_contact_Position;
     public bool registered = false;
     public float max_tolerence;
-    public float current_tolerence;
     private void Awake()
     {
         Instance = this;
@@ -21,7 +20,6 @@ public class SawingManager : MonoBehaviour {
         this.contact_position = contact_position;
         this.registered = true;
         this.Privious_contact_Position = contact_position.position;
-        current_tolerence = max_tolerence;
         this.Tramble = tramble;
         return true;
     }
@@ -30,7 +28,6 @@ public class SawingManager : MonoBehaviour {
         this.registered = false;
         this.Foot = null;
         this.Tramble = null;
-        this.current_tolerence = 0;
         return true;
     }
     public static float LenProjAB(Vector3 a, Vector3 b) {
@@ -42,9 +39,9 @@ public class SawingManager : MonoBehaviour {
         if (registered) {
             Vector3 delta = contact_position.position - Privious_contact_Position;
             Privious_contact_Position = contact_position.position;
-            current_tolerence -= Mathf.Min(0.6f, LenProjAB(NormalVector, delta))*Time.deltaTime;
-            SoundEffectManager.Instance.Play("Sawing_Cut", Foot.transform.position);
-            if (current_tolerence < 0) {
+            max_tolerence -= Mathf.Min(0.6f, LenProjAB(NormalVector, delta))*Time.deltaTime;
+            SoundEffectManager.Instance.Play("Sawing_Cut");
+            if (max_tolerence < 0) {
                 //The foot is cut off do something
                 Destroy(Tramble);
                 HoloToolkit.Unity.InputModule.Examples.Grabbables.GrabbableChild component = Foot.GetComponent<HoloToolkit.Unity.InputModule.Examples.Grabbables.GrabbableChild>();

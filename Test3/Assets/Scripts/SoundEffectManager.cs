@@ -11,32 +11,28 @@ public class SoundEffectManager : MonoBehaviour {
         public AudioClip source;
     }
     public SoundEffectSources[] soundEffectSource;
+    public AudioSource audioSource;
     public static SoundEffectManager Instance;
     // Use this for initialization
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         Instance = this;
     }
-    public void Play(string Name,Vector3 Postion)
+    public void Play(string Name)
     {
-        SoundEffectSources temp = new SoundEffectSources();
-        foreach (SoundEffectSources t in soundEffectSource){
-            if (t.name == Name) {
-                temp = t;
-            }
-        }
-            AudioSource.PlayClipAtPoint(temp.source, Postion);
-    }
-    public void Play(string Name) {
-        SoundEffectSources temp = new SoundEffectSources();
-        foreach (SoundEffectSources t in soundEffectSource)
+        if (!audioSource.isPlaying)
         {
-            if (t.name == Name)
+            SoundEffectSources temp = new SoundEffectSources();
+            foreach (SoundEffectSources t in soundEffectSource)
             {
-                temp = t;
+                if (t.name == Name)
+                {
+                    temp = t;
+                }
             }
+            audioSource.PlayOneShot(temp.source);
         }
-        AudioSource.PlayClipAtPoint(temp.source, new Vector3(0, 0, 0));
     }
 
 }
