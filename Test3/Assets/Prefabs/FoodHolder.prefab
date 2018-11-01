@@ -151,7 +151,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1835670345872610}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -160,7 +160,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 244d4b4c675bb0c4b997d9ef358b84d1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d9fe7226371dec4db8458725ea9306d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WastedFoot: {fileID: 1269749128628812}
+  WastedFoot: {fileID: 1331578865809530}
 --- !u!135 &135093152060343600
 SphereCollider:
   m_ObjectHideFlags: 1
