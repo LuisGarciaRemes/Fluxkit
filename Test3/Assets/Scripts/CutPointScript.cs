@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class CutPointScript : MonoBehaviour {
 
+	private AudioSource audioSource;
+
+	void Start () {
+		audioSource = gameObject.transform.parent.GetComponent<AudioSource>();
+	}
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Knife"))
         {
-            gameObject.SetActive(false);
+			//plays whenever knife touches a cutting point
+			audioSource.Play();
+
+			//makes sure it only lets you cut during the cutting stage
+			if (gameObject.transform.parent.GetComponent<SlicingScript> ().isActiveAndEnabled) {
+				gameObject.SetActive (false);
+			}
         }
     }
 
