@@ -15,6 +15,8 @@ public class FootHolder : MonoBehaviour {
             }
             other.transform.parent = this.transform;
             other.transform.position = new Vector3(0, 0, 0);
+            other.transform.rotation = Quaternion.identity;
+            GameOver.Instance.nMouseOver();
         }
     }
 }
