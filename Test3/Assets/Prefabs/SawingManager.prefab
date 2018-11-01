@@ -53,8 +53,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contact_position: {fileID: 0}
   Foot: {fileID: 0}
-  NormalVector: {x: 0, y: 0, z: 0}
+  NormalVector: {x: 1, y: 0, z: 0}
   Privious_contact_Position: {x: 0, y: 0, z: 0}
   registered: 0
-  max_tolerence: 100
+  max_tolerence: 0.7
   current_tolerence: 0

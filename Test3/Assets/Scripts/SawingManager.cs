@@ -40,6 +40,7 @@ public class SawingManager : MonoBehaviour {
             Vector3 delta = contact_position.position - Privious_contact_Position;
             Privious_contact_Position = contact_position.position;
             current_tolerence -= Mathf.Min(0.6f, LenProjAB(NormalVector, delta))*Time.deltaTime;
+            SoundEffectManager.Instance.Play("Sawing_Cut", Foot.transform.position);
             if (current_tolerence < 0) {
                 //The foot is cut off do something
                 this.Foot = null;
