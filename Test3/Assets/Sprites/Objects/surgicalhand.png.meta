@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: fc040866a61a50a45a776b2223a4a18a
+guid: f5f50bd286afea5478449f3a648b0e42
 TextureImporter:
   fileIDToRecycleName:
-    21300000: bloody version_0
-    21300002: bloody version_1
-    21300004: bloody version_2
-    21300006: bloody version_3
-    21300008: bloody version_4
-    21300010: bloody version_5
+    21300000: surgicalhand_0
+    21300002: surgicalhand_1
+    21300004: surgicalhand_2
+    21300006: surgicalhand_3
+    21300008: surgicalhand_4
+    21300010: surgicalhand_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bloody version_0
+      name: surgicalhand_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1687
-        width: 440
-        height: 1265
+        y: 2146
+        width: 643
+        height: 818
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,19 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d20c1e59c92c804db7f8871b7216714
+      spriteID: 6e7fc872cfe38694db5bde57601ed401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloody version_1
+      name: surgicalhand_1
       rect:
         serializedVersion: 2
-        x: 644
-        y: 1762
-        width: 595
-        height: 1062
+        x: 1315
+        y: 2160
+        width: 740
+        height: 816
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,19 +157,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 218840dc107e70545930c3851fa01945
+      spriteID: 28948134f8944294e967600fd96019f9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloody version_2
+      name: surgicalhand_2
       rect:
         serializedVersion: 2
-        x: 1464
-        y: 1592
-        width: 132
-        height: 1268
+        x: 118
+        y: 1157
+        width: 441
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,19 +177,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d69113fa1588b57458e6ea56400d2c10
+      spriteID: e67ea7967d787c549b6f73ce1269dc45
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloody version_3
+      name: surgicalhand_3
       rect:
         serializedVersion: 2
-        x: 1906
-        y: 1419
-        width: 334
-        height: 1533
+        x: 1463
+        y: 1066
+        width: 424
+        height: 718
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,19 +197,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0701dd53383339041bce9503a628dabd
+      spriteID: 03e90cde1a5c7284da2513c4ff28e893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloody version_4
+      name: surgicalhand_4
       rect:
         serializedVersion: 2
-        x: 66
+        x: 174
+        y: 17
+        width: 280
+        height: 751
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdce890bd42d04545b101d267bc413d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: surgicalhand_5
+      rect:
+        serializedVersion: 2
+        x: 1531
         y: 0
-        width: 335
-        height: 1118
+        width: 403
+        height: 751
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,27 +237,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7693742ed5b5423438f3a45b60c67652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bloody version_5
-      rect:
-        serializedVersion: 2
-        x: 742
-        y: 0
-        width: 1357
-        height: 962
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 162, z: 227, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c19e9eef85bde2c4c807fc7964b71499
+      spriteID: 9257e437d136734499e8efee2a684b93
       vertices: []
       indices: 
       edges: []
@@ -245,7 +245,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0293126b36e7fc141b1ef43d6c033383
+    spriteID: 1dac713e8e216d843b41cd20c2d4ea5f
     vertices: []
     indices: 
     edges: []
