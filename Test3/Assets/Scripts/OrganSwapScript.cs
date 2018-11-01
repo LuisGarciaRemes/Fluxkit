@@ -46,20 +46,29 @@ public class OrganSwapScript : MonoBehaviour {
 
 	}
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag(organToPlaceTag))
+        {
+            organToPlace.transform.position = new Vector3(.221f, .817f, .8234f);
+        }
+        else if (other.CompareTag("RemovableSkin") && organInPlace)
+        {
+            objectToCut.transform.position = new Vector3(.2186f, .818f, .8255f);
+        }
+    }
+            private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(organToPlaceTag))
         {
             organInPlace = true;
-            organToPlace.transform.position = new Vector3(.221f, .817f, .8234f);
-            //organToPlace.transform.rotation = new Quaternion(90f, 0f, -90f, 0f);
+            //organToPlace.transform.position = new Vector3(.221f, .817f, .8234f);
             organToPlace.GetComponent<GrabbableChild>().enabled = false;
         }
         else if(other.CompareTag("RemovableSkin"))
         {
             skinInPlace = true;
-            objectToCut.transform.position = new Vector3(.2186f, .8175f, .8255f);
-            //objectToCut.transform.rotation = new Quaternion(0f, -90f, 0f, 0f);
+            //objectToCut.transform.position = new Vector3(.2186f, .818f, .8255f);
         }
 
 		if (organInPlace && skinInPlace && !isStapled && canStaple) {
