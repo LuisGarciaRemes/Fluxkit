@@ -30,6 +30,8 @@ public class OrganSwapScript : MonoBehaviour {
 		if(organInPlace && skinInPlace && isStapled)
         {
             Debug.Log("Surgery Complete");
+            organToPlace.GetComponent<GrabbableChild>().enabled = false;
+            objectToCut.GetComponent<GrabbableChild>().enabled = false;
         }
 
         if(skinInPlace)
@@ -49,11 +51,15 @@ public class OrganSwapScript : MonoBehaviour {
         if (other.CompareTag(organToPlaceTag))
         {
             organInPlace = true;
+            organToPlace.transform.position = new Vector3(.221f, .817f, .8234f);
+            //organToPlace.transform.rotation = new Quaternion(90f, 0f, -90f, 0f);
             organToPlace.GetComponent<GrabbableChild>().enabled = false;
         }
         else if(other.CompareTag("RemovableSkin"))
         {
             skinInPlace = true;
+            objectToCut.transform.position = new Vector3(.2186f, .8175f, .8255f);
+            //objectToCut.transform.rotation = new Quaternion(0f, -90f, 0f, 0f);
         }
 
 		if (organInPlace && skinInPlace && !isStapled && canStaple) {
