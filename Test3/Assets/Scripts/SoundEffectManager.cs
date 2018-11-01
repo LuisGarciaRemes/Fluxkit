@@ -13,6 +13,7 @@ public class SoundEffectManager : MonoBehaviour {
     public SoundEffectSources[] soundEffectSource;
     public AudioSource audioSource;
     public static SoundEffectManager Instance;
+    public bool play = false;
     // Use this for initialization
     private void Awake()
     {
@@ -32,6 +33,12 @@ public class SoundEffectManager : MonoBehaviour {
                 }
             }
             audioSource.PlayOneShot(temp.source);
+        }
+    }
+    private void Update()
+    {
+        if (play) {
+            this.Play("Sawing_Cut");
         }
     }
 
