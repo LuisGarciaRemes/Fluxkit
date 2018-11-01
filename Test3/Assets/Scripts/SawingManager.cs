@@ -43,7 +43,14 @@ public class SawingManager : MonoBehaviour {
             SoundEffectManager.Instance.Play("Sawing_Cut", Foot.transform.position);
             if (current_tolerence < 0) {
                 //The foot is cut off do something
-                this.Foot = null;
+                Tramble temp = Foot.GetComponentInChildren<Tramble>();
+                if (temp != null) {
+                    Destroy(temp);
+                }
+                HoloToolkit.Unity.InputModule.Examples.Grabbables.GrabbableChild component = Foot.GetComponentInChildren<HoloToolkit.Unity.InputModule.Examples.Grabbables.GrabbableChild>();
+                if (temp != null) {
+                    component.enabled = true;
+                }
                 this.Resign();
             }
         }

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Tramble : MonoBehaviour {
+    public GameObject WastedFoot;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Saw") {
-            SawingManager.Instance.Register(other.gameObject.GetComponent<Transform>(), this.gameObject);
+            SawingManager.Instance.Register(other.gameObject.GetComponent<Transform>(), WastedFoot);
             Debug.Log("Contact");
         }
     }
