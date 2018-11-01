@@ -34,7 +34,6 @@ public class OrganSwapScript : MonoBehaviour {
 
         if(skinInPlace)
         {
-
             organToRemove.GetComponent<GrabbableChild>().enabled = false;
         }
         else
