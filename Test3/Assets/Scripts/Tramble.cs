@@ -18,7 +18,7 @@ public class Tramble : MonoBehaviour {
             HoloToolkit.Unity.InputModule.Examples.Grabbables.GrabbableChild temp = other.gameObject.GetComponent<HoloToolkit.Unity.InputModule.Examples.Grabbables.GrabbableChild>();
             if (temp != null)
             {
-                TestViberate.Instance.Viberate(temp.my_hand, 1.0f, 1.0f);
+                //TestViberate.Instance.Viberate(temp.my_hand, 1.0f, 1.0f);
             }
         }
     }
