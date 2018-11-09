@@ -498,89 +498,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114710303647202208, guid: d29bc40b7f3df26479d6a0aac211c355,
+    - target: {fileID: 20770519707920992, guid: d29bc40b7f3df26479d6a0aac211c355,
         type: 2}
-      propertyPath: AnimateControllerModel
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 20770519707920992, guid: d29bc40b7f3df26479d6a0aac211c355,
+        type: 2}
+      propertyPath: m_projectionMatrixMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1493965172262900, guid: d29bc40b7f3df26479d6a0aac211c355, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1372541880982678, guid: d29bc40b7f3df26479d6a0aac211c355, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114710303647202208, guid: d29bc40b7f3df26479d6a0aac211c355,
+    - target: {fileID: 20770519707920992, guid: d29bc40b7f3df26479d6a0aac211c355,
         type: 2}
-      propertyPath: AlternateLeftController
-      value: 
-      objectReference: {fileID: 1431408446161180, guid: f03fdbc4624ff9744b197b051d0461d8,
-        type: 2}
-    - target: {fileID: 114710303647202208, guid: d29bc40b7f3df26479d6a0aac211c355,
-        type: 2}
-      propertyPath: AlternateRightController
-      value: 
-      objectReference: {fileID: 1431408446161180, guid: f5cd5b5f025f72647aa2879bb4b746aa,
-        type: 2}
-    - target: {fileID: 114710303647202208, guid: d29bc40b7f3df26479d6a0aac211c355,
-        type: 2}
-      propertyPath: AlwaysUseAlternateLeftModel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114710303647202208, guid: d29bc40b7f3df26479d6a0aac211c355,
-        type: 2}
-      propertyPath: AlwaysUseAlternateRightModel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114812681035175298, guid: d29bc40b7f3df26479d6a0aac211c355,
-        type: 2}
-      propertyPath: EnableTeleport
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114812681035175298, guid: d29bc40b7f3df26479d6a0aac211c355,
-        type: 2}
-      propertyPath: EnableStrafe
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114812681035175298, guid: d29bc40b7f3df26479d6a0aac211c355,
-        type: 2}
-      propertyPath: StayOnTheFloor
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114812681035175298, guid: d29bc40b7f3df26479d6a0aac211c355,
-        type: 2}
-      propertyPath: RotationSize
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114129378875773704, guid: d29bc40b7f3df26479d6a0aac211c355,
-        type: 2}
-      propertyPath: boundaryHeight
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114129378875773704, guid: d29bc40b7f3df26479d6a0aac211c355,
-        type: 2}
-      propertyPath: renderFloor
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114129378875773704, guid: d29bc40b7f3df26479d6a0aac211c355,
-        type: 2}
-      propertyPath: renderBoundary
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1493965172262900, guid: d29bc40b7f3df26479d6a0aac211c355, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114504390558679740, guid: d29bc40b7f3df26479d6a0aac211c355,
-        type: 2}
-      propertyPath: OpaqueQualityLevel
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114504390558679740, guid: d29bc40b7f3df26479d6a0aac211c355,
-        type: 2}
-      propertyPath: HoloLensQualityLevel
-      value: 0
+      propertyPath: field of view
+      value: 26.991467
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d29bc40b7f3df26479d6a0aac211c355, type: 2}
@@ -999,6 +930,11 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 64066573849402820, guid: 35854a197a644a241a5a211c60b3daaf,
+        type: 2}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35854a197a644a241a5a211c60b3daaf, type: 2}
   m_IsPrefabAsset: 0
@@ -1141,12 +1077,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4000011656901714, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011656901714, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
-      propertyPath: m_LocalScale.y
+    - target: {fileID: 1000011070707148, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2225,7 +2157,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabSpot: {fileID: 0}
   grabStyle: 0
-  my_hand: 0
 --- !u!23 &1296948570
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2775,7 +2706,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 752ea8dd54d61934c9ec6ff6944b210a, type: 2}
+  - {fileID: 2100000, guid: 67dd3ea9a59f8fb48a5a4a7d10f2a97f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2885,6 +2816,11 @@ Prefab:
         type: 2}
       propertyPath: m_Constraints
       value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 64353292531207760, guid: 39d80266ccc3fad46910624cd68d2d88,
+        type: 2}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39d80266ccc3fad46910624cd68d2d88, type: 2}
@@ -3133,7 +3069,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabSpot: {fileID: 0}
   grabStyle: 0
-  my_hand: 0
 --- !u!1 &1681003673 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1915254927743898, guid: 35854a197a644a241a5a211c60b3daaf,
